@@ -5,11 +5,9 @@ import TaskItem from './components/TaskItem';
 
 function App() {
 
-  //trang thai mang
 
   const [taskListState, setTaskListState] = useState();
 
-  // init
 
   const [taskArr, setTaskArr] = useState(() => {
     let taskData = JSON.parse(localStorage.getItem('listTask')) || [
